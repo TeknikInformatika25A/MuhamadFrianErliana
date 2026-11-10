@@ -4,6 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portofolio Frian Erliana</title>
+  <meta name="description" content="Portofolio Muhamad Frian Erliana, mahasiswa S1 Teknik Informatika Universitas Perjuangan Tasikmalaya: basis data, web, dan statistika.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Portofolio Frian Erliana">
+  <meta property="og:description" content="Mahasiswa Teknik Informatika UNPER Tasikmalaya. Lihat proyek basis data, web, dan analisis data.">
+  <meta property="og:locale" content="id_ID">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a6c96'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='28' font-weight='700' text-anchor='middle' fill='white'%3EFE%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap">
@@ -18,18 +24,21 @@
       <li><a href="#keahlian">Keahlian</a></li>
       <li><a href="#proyek">Proyek</a></li>
       <li><a href="#pendidikan">Pendidikan</a></li>
+      <li><a href="#kontak">Kontak</a></li>
       <li><button class="theme-btn" id="theme-btn" type="button" aria-label="Ganti tema terang atau gelap">Tema</button></li>
     </ul>
   </nav>
 
   <div class="hero">
     <div>
+      <div class="avatar" id="avatar" aria-hidden="true">FE</div>
       <p class="eyebrow">Mahasiswa Teknik Informatika · Tasikmalaya</p>
       <h1>Muhamad Frian <span>Erliana</span></h1>
       <p class="lead">Saya belajar merancang basis data, membangun halaman web, dan membaca data lewat statistik. Portofolio ini memuat tugas dan proyek yang sudah saya kerjakan selama kuliah.</p>
       <div class="cta">
         <a class="btn primary" href="#proyek">Lihat proyek</a>
-        <a class="btn ghost" href="#tentang">Kenal lebih dekat</a>
+        <a class="btn ghost" href="#kontak">Hubungi saya</a>
+        <a class="btn ghost" id="cv-btn" href="#" target="_blank" rel="noopener" hidden>Unduh CV</a>
       </div>
     </div>
     <div class="entity" aria-label="Ringkasan profil dalam bentuk entitas basis data">
@@ -48,8 +57,8 @@
     <div class="sec-head"><h2>Tentang saya</h2><span class="tag">profil singkat</span></div>
     <div class="about">
       <div>
-        <p>Saya mahasiswa S1 Teknik Informatika di Universitas Perjuangan Tasikmalaya. Di kelas saya mengerjakan perancangan basis data, pembuatan halaman web, dan analisis data.</p>
-        <p>Saya suka tugas yang hasilnya bisa dilihat dan dipakai: diagram ERD yang rapi, halaman web yang bisa dibuka siapa saja, dan grafik yang menjawab pertanyaan. Saya sedang membangun kebiasaan mendokumentasikan setiap tugas supaya bisa dipelajari ulang.</p>
+        <p>Saya mahasiswa S1 Teknik Informatika di Universitas Perjuangan Tasikmalaya. Saat ini saya paling banyak belajar di tiga hal: merancang basis data, membuat halaman web, dan membaca data lewat statistik.</p>
+        <p>Saya suka tugas yang hasilnya bisa dilihat dan dipakai: diagram ERD yang rapi, halaman web yang bisa dibuka siapa saja, dan grafik yang menjawab pertanyaan. Arah yang sedang saya jajaki adalah pengembangan web dengan basis data yang tertata, dan saya terbuka untuk kesempatan magang maupun proyek bersama.</p>
       </div>
       <div class="facts">
         <div class="fact"><b>PROGRAM STUDI</b>S1 Teknik Informatika</div>
@@ -68,7 +77,7 @@
       </div>
       <div class="skill">
         <h3>Web</h3>
-        <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div>
+        <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Git &amp; GitHub</span></div>
       </div>
       <div class="skill">
         <h3>Data &amp; statistika</h3>
@@ -85,33 +94,47 @@
     <div class="sec-head"><h2>Proyek</h2><span class="tag">tugas dan karya kuliah</span></div>
     <div class="projects">
       <article class="proj">
+        <span class="meta">WEB · PROYEK MANDIRI</span>
+        <h3>Portofolio Pribadi</h3>
+        <p>Website portofolio yang kamu lihat sekarang, ditulis dengan HTML, CSS, dan JavaScript tanpa framework, lengkap dengan tema terang dan gelap.</p>
+        <p class="learn"><b>Yang saya pelajari</b>Memisahkan struktur, tampilan, dan perilaku halaman ke tiga file, lalu mengelolanya dengan Git dan GitHub.</p>
+        <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div>
+        <div class="links"><a href="https://github.com/TeknikInformatika25A/MuhamadFrianErliana" target="_blank" rel="noopener">Lihat di GitHub</a></div>
+      </article>
+      <article class="proj">
         <span class="meta">BASIS DATA · STUDI KASUS</span>
         <h3>Sistem Informasi Reservasi Hotel Sejahtera</h3>
         <p>Perancangan ERD dengan minimal lima entitas, lengkap dengan atribut primary key dan foreign key serta kardinalitas antar entitas.</p>
+        <p class="learn"><b>Yang saya pelajari</b>Menurunkan entitas dan relasi dari kebutuhan sistem, lalu menentukan kardinalitas yang tepat.</p>
         <div class="chips"><span class="chip">ERD</span><span class="chip">PK / FK</span><span class="chip">Kardinalitas</span></div>
       </article>
       <article class="proj">
         <span class="meta">BASIS DATA · STUDI KASUS</span>
         <h3>Sistem Penjualan Toko Online</h3>
         <p>ERD dan model relasional untuk toko online dengan data produk nyata, salah satunya Kopi Kapal Api, dalam rancangan tiga entitas.</p>
+        <p class="learn"><b>Yang saya pelajari</b>Mengubah ERD menjadi model relasional dan menjaga rancangan tetap ringkas dengan jumlah entitas terbatas.</p>
         <div class="chips"><span class="chip">ERD</span><span class="chip">Model relasional</span></div>
       </article>
       <article class="proj">
         <span class="meta">WEB · KELAS</span>
         <h3>Website Kelas A Teknik Informatika</h3>
         <p>Halaman web kelas yang memuat daftar mata kuliah dan anggota kelas, dibuat dengan HTML.</p>
+        <p class="learn"><b>Yang saya pelajari</b>Menyusun konten banyak halaman dengan struktur HTML yang jelas.</p>
         <div class="chips"><span class="chip">HTML</span><span class="chip">Konten kelas</span></div>
+        <div class="links"><a href="https://github.com/TeknikInformatika25A/KELAS-A-TEKNIK-INFORMATIKA" target="_blank" rel="noopener">Lihat di GitHub</a></div>
       </article>
       <article class="proj">
         <span class="meta">KEWIRAUSAHAAN · IDE USAHA</span>
         <h3>Ide Usaha Jual Beli Ikan Guppy</h3>
         <p>Rancangan ide usaha mengikuti format Rumusan Masalah dan Urgensi: masalah, solusi yang sudah ada, serta solusi terbaik dan kebaruannya.</p>
+        <p class="learn"><b>Yang saya pelajari</b>Menjelaskan masalah dan membandingkannya dengan solusi yang sudah ada sebelum mengusulkan sesuatu yang baru.</p>
         <div class="chips"><span class="chip">Problem</span><span class="chip">Existing solutions</span><span class="chip">Novelty</span></div>
       </article>
       <article class="proj">
         <span class="meta">STATISTIKA · KUIS</span>
         <h3>Data Visualization dan EDA</h3>
         <p>Latihan Statistika dan Probabilitas pertemuan 3 tentang menyajikan data lewat grafik dan menelusuri pola awal data.</p>
+        <p class="learn"><b>Yang saya pelajari</b>Memilih jenis grafik yang sesuai dengan data dan membaca pola awal sebelum analisis lanjut.</p>
         <div class="chips"><span class="chip">Statistika</span><span class="chip">EDA</span><span class="chip">Visualisasi</span></div>
       </article>
     </div>
@@ -126,6 +149,14 @@
         <p>Universitas Perjuangan Tasikmalaya · Kelas A</p>
       </div>
     </div>
+  </section>
+
+  <section id="kontak">
+    <div class="sec-head"><h2>Kontak</h2><span class="tag">mari terhubung</span></div>
+    <p class="contact-intro">Tertarik berdiskusi, mengajak kerja sama, atau menawarkan magang? Hubungi saya lewat salah satu kanal berikut.</p>
+    <ul class="contact" id="contact-list">
+      <li><span class="lbl">GitHub</span><a href="https://github.com/TeknikInformatika25A/MuhamadFrianErliana" target="_blank" rel="noopener">github.com/TeknikInformatika25A/MuhamadFrianErliana</a></li>
+    </ul>
   </section>
 
   <footer>
