@@ -5,7 +5,7 @@ const PROFIL = {
   email: "muhamadfrian1@gmail.com", // email yang ditampilkan di bagian Kontak
   linkedin: "",  // contoh: "https://www.linkedin.com/in/namakamu"
   foto: "foto.jpg", // nama file foto (taruh file fotonya di folder yang sama)
-  cv: ""         // contoh: "cv-frian.pdf" (taruh file PDF-nya di folder yang sama)
+  cv: "cv-frian.pdf" // nama file CV berformat PDF (taruh file PDF-nya di folder yang sama)
 };
 
 // 1. Tombol ganti tema (terang / gelap), pilihan disimpan di browser
