@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio Frian Erliana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <span class="brand">frian.erliana</span>
+    <ul>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#keahlian">Keahlian</a></li>
+      <li><a href="#proyek">Proyek</a></li>
+      <li><a href="#pendidikan">Pendidikan</a></li>
+      <li><button class="theme-btn" id="theme-btn" type="button" aria-label="Ganti tema terang atau gelap">Tema</button></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <div>
+      <p class="eyebrow">Mahasiswa Teknik Informatika · Tasikmalaya</p>
+      <h1>Muhamad Frian <span>Erliana</span></h1>
+      <p class="lead">Saya belajar merancang basis data, membangun halaman web, dan membaca data lewat statistik. Portofolio ini memuat tugas dan proyek yang sudah saya kerjakan selama kuliah.</p>
+      <div class="cta">
+        <a class="btn primary" href="#proyek">Lihat proyek</a>
+        <a class="btn ghost" href="#tentang">Kenal lebih dekat</a>
+      </div>
+    </div>
+    <div class="entity" aria-label="Ringkasan profil dalam bentuk entitas basis data">
+      <header>MAHASISWA</header>
+      <dl>
+        <div class="row"><dt class="k">PK</dt><dt>nama</dt><dd>Muhamad Frian Erliana</dd></div>
+        <div class="row"><dt></dt><dt>prodi</dt><dd>S1 Teknik Informatika</dd></div>
+        <div class="row"><dt></dt><dt>kampus</dt><dd>Universitas Perjuangan Tasikmalaya</dd></div>
+        <div class="row"><dt class="k">FK</dt><dt>kelas</dt><dd>Kelas A</dd></div>
+        <div class="row"><dt></dt><dt>fokus</dt><dd>Basis data, web, statistika</dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <section id="tentang">
+    <div class="sec-head"><h2>Tentang saya</h2><span class="tag">profil singkat</span></div>
+    <div class="about">
+      <div>
+        <p>Saya mahasiswa S1 Teknik Informatika di Universitas Perjuangan Tasikmalaya. Di kelas saya mengerjakan perancangan basis data, pembuatan halaman web, dan analisis data.</p>
+        <p>Saya suka tugas yang hasilnya bisa dilihat dan dipakai: diagram ERD yang rapi, halaman web yang bisa dibuka siapa saja, dan grafik yang menjawab pertanyaan. Saya sedang membangun kebiasaan mendokumentasikan setiap tugas supaya bisa dipelajari ulang.</p>
+      </div>
+      <div class="facts">
+        <div class="fact"><b>PROGRAM STUDI</b>S1 Teknik Informatika</div>
+        <div class="fact"><b>KAMPUS</b>Universitas Perjuangan Tasikmalaya</div>
+        <div class="fact"><b>KELAS</b>Kelas A</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="keahlian">
+    <div class="sec-head"><h2>Keahlian</h2><span class="tag">yang sedang saya dalami</span></div>
+    <div class="skills">
+      <div class="skill">
+        <h3>Basis data</h3>
+        <div class="chips"><span class="chip">ERD</span><span class="chip">Primary &amp; Foreign Key</span><span class="chip">Kardinalitas</span><span class="chip">Model relasional</span></div>
+      </div>
+      <div class="skill">
+        <h3>Web</h3>
+        <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div>
+      </div>
+      <div class="skill">
+        <h3>Data &amp; statistika</h3>
+        <div class="chips"><span class="chip">Statistika &amp; probabilitas</span><span class="chip">Data visualization</span><span class="chip">EDA</span></div>
+      </div>
+      <div class="skill">
+        <h3>Analisis usaha</h3>
+        <div class="chips"><span class="chip">Rumusan masalah</span><span class="chip">Analisis solusi</span><span class="chip">Novelty</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyek">
+    <div class="sec-head"><h2>Proyek</h2><span class="tag">tugas dan karya kuliah</span></div>
+    <div class="projects">
+      <article class="proj">
+        <span class="meta">BASIS DATA · STUDI KASUS</span>
+        <h3>Sistem Informasi Reservasi Hotel Sejahtera</h3>
+        <p>Perancangan ERD dengan minimal lima entitas, lengkap dengan atribut primary key dan foreign key serta kardinalitas antar entitas.</p>
+        <div class="chips"><span class="chip">ERD</span><span class="chip">PK / FK</span><span class="chip">Kardinalitas</span></div>
+      </article>
+      <article class="proj">
+        <span class="meta">BASIS DATA · STUDI KASUS</span>
+        <h3>Sistem Penjualan Toko Online</h3>
+        <p>ERD dan model relasional untuk toko online dengan data produk nyata, salah satunya Kopi Kapal Api, dalam rancangan tiga entitas.</p>
+        <div class="chips"><span class="chip">ERD</span><span class="chip">Model relasional</span></div>
+      </article>
+      <article class="proj">
+        <span class="meta">WEB · KELAS</span>
+        <h3>Website Kelas A Teknik Informatika</h3>
+        <p>Halaman web kelas yang memuat daftar mata kuliah dan anggota kelas, dibuat dengan HTML.</p>
+        <div class="chips"><span class="chip">HTML</span><span class="chip">Konten kelas</span></div>
+      </article>
+      <article class="proj">
+        <span class="meta">KEWIRAUSAHAAN · IDE USAHA</span>
+        <h3>Ide Usaha Jual Beli Ikan Guppy</h3>
+        <p>Rancangan ide usaha mengikuti format Rumusan Masalah dan Urgensi: masalah, solusi yang sudah ada, serta solusi terbaik dan kebaruannya.</p>
+        <div class="chips"><span class="chip">Problem</span><span class="chip">Existing solutions</span><span class="chip">Novelty</span></div>
+      </article>
+      <article class="proj">
+        <span class="meta">STATISTIKA · KUIS</span>
+        <h3>Data Visualization dan EDA</h3>
+        <p>Latihan Statistika dan Probabilitas pertemuan 3 tentang menyajikan data lewat grafik dan menelusuri pola awal data.</p>
+        <div class="chips"><span class="chip">Statistika</span><span class="chip">EDA</span><span class="chip">Visualisasi</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="pendidikan">
+    <div class="sec-head"><h2>Pendidikan</h2><span class="tag">riwayat studi</span></div>
+    <div class="edu">
+      <div class="when">Sedang berjalan</div>
+      <div>
+        <h3>S1 Teknik Informatika</h3>
+        <p>Universitas Perjuangan Tasikmalaya · Kelas A</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Muhamad Frian Erliana · Tasikmalaya</span>
+    <span id="updated">Diperbarui November 2026</span>
+  </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
