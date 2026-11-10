@@ -4,7 +4,7 @@
 const PROFIL = {
   email: "",     // contoh: "namakamu@gmail.com"
   linkedin: "",  // contoh: "https://www.linkedin.com/in/namakamu"
-  foto: "",      // contoh: "foto.jpg" (taruh file fotonya di folder yang sama)
+  foto: "foto.jpg", // nama file foto (taruh file fotonya di folder yang sama)
   cv: ""         // contoh: "cv-frian.pdf" (taruh file PDF-nya di folder yang sama)
 };
 
