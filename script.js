@@ -31,27 +31,32 @@ themeBtn.addEventListener("click", () => {
   try { localStorage.setItem("tema", next); } catch (e) { /* abaikan */ }
 });
 
-// 2. Menandai menu navigasi sesuai bagian yang sedang dilihat
-const links = document.querySelectorAll("nav ul a[href^='#']");
-const sections = [...links]
-  .map((a) => document.querySelector(a.getAttribute("href")))
-  .filter(Boolean);
+// 2. Navigasi: halaman utama hanya menampilkan bagian atas (hero).
+//    Tiap bagian lain baru tampil saat tombol navigasinya diklik.
+const navLinks = document.querySelectorAll("nav a[href^='#']");
+const hero = document.querySelector(".hero");
+const sections = document.querySelectorAll("section[id]");
 
-function setActive(id) {
-  links.forEach((a) => a.classList.toggle("active", a.getAttribute("href") === "#" + id));
+function showView() {
+  const id = location.hash.replace("#", "");
+  const target = [...sections].find((s) => s.id === id);
+
+  sections.forEach((s) => s.classList.toggle("active", s === target));
+  if (hero) hero.hidden = Boolean(target);
+
+  const activeId = target ? target.id : "beranda";
+  navLinks.forEach((a) => {
+    const on = a.getAttribute("href") === "#" + activeId;
+    a.classList.toggle("active", on);
+    if (on) a.setAttribute("aria-current", "page");
+    else a.removeAttribute("aria-current");
+  });
+
+  window.scrollTo(0, 0);
 }
 
-if ("IntersectionObserver" in window) {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) setActive(entry.target.id);
-      });
-    },
-    { rootMargin: "-40% 0px -55% 0px" }
-  );
-  sections.forEach((s) => observer.observe(s));
-}
+window.addEventListener("hashchange", showView);
+showView();
 
 // 3. Tanggal "Diperbarui" otomatis mengikuti waktu halaman dibuka
 const updated = document.getElementById("updated");
