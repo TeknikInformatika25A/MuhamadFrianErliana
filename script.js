@@ -2,7 +2,7 @@
 // ISI DATA PRIBADIMU DI SINI. Bagian yang dikosongkan tidak akan tampil.
 // ============================================================
 const PROFIL = {
-  email: "",     // contoh: "namakamu@gmail.com"
+  email: "muhamadfrian1@gmail.com", // email yang ditampilkan di bagian Kontak
   linkedin: "",  // contoh: "https://www.linkedin.com/in/namakamu"
   foto: "foto.jpg", // nama file foto (taruh file fotonya di folder yang sama)
   cv: ""         // contoh: "cv-frian.pdf" (taruh file PDF-nya di folder yang sama)
